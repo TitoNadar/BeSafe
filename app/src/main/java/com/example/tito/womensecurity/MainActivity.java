@@ -13,6 +13,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.tito.womensecurity.Common.Helper;
+import com.example.tito.womensecurity.Interface.SmsService;
+import com.example.tito.womensecurity.Modal.Response;
 import com.example.tito.womensecurity.Services.MyService;
 import com.github.piasy.rxandroidaudio.AudioRecorder;
 import com.github.piasy.rxandroidaudio.PlayConfig;
@@ -29,6 +32,8 @@ import java.io.File;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import retrofit.Callback;
+import retrofit.Retrofit;
 
 import static com.example.tito.womensecurity.Services.MyService.RECORD_AUDIO;
 import static com.example.tito.womensecurity.Services.MyService.WRITE_STORAGE;
@@ -39,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private static File mAudioFile;
   static long  a;
   private StorageReference storageReference;
-
+SmsService smsService;
 
     public MainActivity() {
     }
@@ -48,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        smsService= Helper.getSmsService();
         storageReference= FirebaseStorage.getInstance().getReference();
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
 
@@ -83,7 +89,26 @@ for(int i=0;i<90000;i++)
 //playRecording();
 uploadToFirebase(Environment.getExternalStorageDirectory().getAbsolutePath() +
         File.separator +a+".file.m4a");
+sendSMS();
 }
+
+    private void sendSMS() {
+        smsService.getResponse(Helper.getApiUrl()).enqueue(new Callback<Response>() {
+            @Override
+            public void onResponse(retrofit.Response<Response> response, Retrofit retrofit) {
+                if(Integer.parseInt(response.body().getMessageIDs())>0)
+                {
+                    Log.d("sms","success");
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+    }
+
 
     private void uploadToFirebase(String filePath) {
         if (filePath != null) {
