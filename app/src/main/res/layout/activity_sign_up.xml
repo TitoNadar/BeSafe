@@ -36,7 +36,7 @@
                 android:layout_gravity="center"
                 >
 
-                <custom_font.MyTextView
+                <com.example.tito.womensecurity.custom_font.MyTextView
                     android:id="@+id/signin1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         </LinearLayout>
 
 
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:id="@+id/signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,10 +72,11 @@
 
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="USERNAME"
+            android:id="@+id/name"
             android:inputType="text"
             android:textColorHint="#a9b0c3"
             android:textSize="13dp"
@@ -93,10 +94,11 @@
             />
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="EMAIL ADDRESS"
+            android:id="@+id/inputEmailSignup"
             android:inputType="text"
             android:textColorHint="#a9b0c3"
             android:layout_marginTop="32dp"
@@ -112,10 +114,11 @@
             android:layout_marginTop="10dp"
             />
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
+            android:id="@+id/passSignUp"
             android:inputType="textPassword"
             android:textColorHint="#a9b0c3"
             android:layout_marginTop="32dp"
@@ -133,8 +136,8 @@
 
 
 
-        <custom_font.MyTextView
-            android:id="@+id/login"
+        <com.example.tito.womensecurity.custom_font.MyTextView
+            android:id="@+id/signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Signup"
@@ -156,7 +159,7 @@
         android:gravity="center"
         android:padding="16dp"
         >
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -183,7 +186,7 @@
     </LinearLayout>
 
 
-    <custom_font.MyTextView
+    <com.example.tito.womensecurity.custom_font.MyTextView
         android:id="@+id/ter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

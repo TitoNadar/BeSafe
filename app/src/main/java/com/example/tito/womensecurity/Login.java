@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
-    Button btnLogin;
+    com.example.tito.womensecurity.custom_font.MyTextView btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         inputEmail=(EditText)findViewById(R.id.emailLogin);
         inputPassword=(EditText)findViewById(R.id.passwordLogin);
-        btnLogin=(Button)findViewById(R.id.button);
+        btnLogin=findViewById(R.id.loginTextView);
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
         btnLogin.setOnClickListener(new View.OnClickListener() {

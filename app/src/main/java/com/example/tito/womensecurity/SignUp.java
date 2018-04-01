@@ -18,17 +18,17 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
     private EditText name, inputEmail, inputPassword;
-    private Button btnSignUp;
+    private com.example.tito.womensecurity.custom_font.MyTextView btnSignUp;
     private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        inputEmail = (EditText) findViewById(R.id.inputEmailSignUp);
-        name = (EditText) findViewById(R.id.name);
-        inputPassword = (EditText) findViewById(R.id.passSignUp);
-        btnSignUp = (Button) findViewById(R.id.signup);
+        inputEmail =  findViewById(R.id.inputEmailSignup);
+        name =  findViewById(R.id.name);
+        inputPassword =  findViewById(R.id.passSignUp);
+        btnSignUp =  findViewById(R.id.signup);
         auth = FirebaseAuth.getInstance();
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {

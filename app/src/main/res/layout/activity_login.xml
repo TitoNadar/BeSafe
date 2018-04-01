@@ -18,7 +18,7 @@
 
 
 
-    <custom_font.MyTextView
+    <com.example.tito.womensecurity.custom_font.MyTextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,10 +41,11 @@
         android:orientation="vertical">
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="EMAIL"
+            android:id="@+id/emailLogin"
             android:inputType="text"
             android:textColorHint="#a9b0c3"
             android:textSize="13dp"
@@ -61,11 +62,12 @@
             >
         </LinearLayout>
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
+            android:id="@+id/passwordLogin"
             android:inputType="textPassword"
             android:textColorHint="#a9b0c3"
             android:layout_marginTop="50dp"
@@ -82,8 +84,8 @@
             >
         </LinearLayout>
 
-        <custom_font.MyTextView
-            android:id="@+id/login"
+        <com.example.tito.womensecurity.custom_font.MyTextView
+            android:id="@+id/loginTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -94,7 +96,7 @@
             android:padding="14dp"
             android:layout_marginTop="50dp"/>
 
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="or sign in with:"
@@ -140,17 +142,18 @@
         android:layout_marginRight="20dp"
         >
 
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:id="@+id/create"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Don't Have An Account ?"
+            android:onClick="signup"
             android:textSize="13dp"
             android:textColor="#2C3646"
             />
 
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot Password"
