@@ -14,7 +14,7 @@
         android:padding="16dp"
         android:layout_marginTop="1dp">
 
-        <custom_font.MyTextView
+        <com.example.tito.womensecurity.custom_font.MyTextView
             android:id="@+id/signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
 
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="NAME"
@@ -48,7 +48,7 @@
             />
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Aadhaar Number"
@@ -67,7 +67,7 @@
             android:layout_marginTop="10dp"
             />
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact Number 1"
@@ -87,7 +87,7 @@
             />
 
 
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact Number 2"
@@ -106,7 +106,7 @@
             android:layout_marginTop="10dp"
 
             />
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact Number 3"
@@ -125,7 +125,7 @@
             android:layout_marginTop="10dp"
 
             />
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact Number 4"
@@ -144,7 +144,7 @@
             android:layout_marginTop="10dp"
 
             />
-        <custom_font.MyEditText
+        <com.example.tito.womensecurity.custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact Number 5"
@@ -163,8 +163,8 @@
             android:layout_marginTop="10dp"
 
             />
-        <custom_font.MyTextView
-            android:id="@+id/login"
+        <com.example.tito.womensecurity.custom_font.MyTextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save and Continue"
