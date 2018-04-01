@@ -20,7 +20,7 @@ Production Stage (Not Started)
 Java, Android Studio.
 
 ### Features :
-**BeSafe** is an app in the human security domain targetted mainly for women and kids. The app is 1st of its kind Android application that provides a Super Quick trigger at the moment of panic with just three shakes, it sends a notification to the 5 nearest people to the user and while we click at the notification a map opens which displays the route to the user panicking. Simultaneously, it sends an SMS to the user's family members and also a notification to the police, it also starts an audio recording in the background which also acts as an evidence. 
+**BeSafe** is an app in the human security domain targetted mainly for women and kids. The app is 1st of its kind Android application that provides a **Super Quick trigger** at the moment of panic with just three shakes, it sends a notification to the 5 nearest people to the user and while we click at the notification a map opens which displays the route to the user panicking. Simultaneously, it sends an SMS to the user's family members and also a notification to the police, it also starts an audio recording in the background which also acts as an evidence. 
 
 
 ### Future prospects :
