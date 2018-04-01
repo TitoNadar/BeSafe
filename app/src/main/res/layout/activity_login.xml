@@ -7,6 +7,7 @@
     >
 
     <ImageView
+
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -43,7 +44,7 @@
         <custom_font.MyEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="USERNAME"
+            android:hint="EMAIL"
             android:inputType="text"
             android:textColorHint="#a9b0c3"
             android:textSize="13dp"
@@ -61,6 +62,7 @@
         </LinearLayout>
 
         <custom_font.MyEditText
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
@@ -147,6 +149,7 @@
             android:textSize="13dp"
             android:textColor="#2C3646"
             />
+
         <custom_font.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
