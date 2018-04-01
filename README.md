@@ -1,5 +1,6 @@
 # BeSafe
 
+
 **BeSafe** is a Super Quick Android Application that provides human security for its app users in the real world. **3 single shakes** of a mobile phone will trigger the app to its main functioning. The app has its target audience as **women and kids** , but it's open to all and can help to prevent certain crimes such as burglary, kidnapping, theft, etc.
 
 ### Motivation :
@@ -10,6 +11,9 @@ Prototype Stage (Almost Complete)
 Production Stage (Not Started) 
 
 ### ScreenShots :
+
+![screenshot from 2018-04-01 19-02-03](https://user-images.githubusercontent.com/26847181/38174106-ff09e1ce-35e5-11e8-8ad1-3af155332dad.png)    ![screenshot from 2018-04-01 19-55-51](https://user-images.githubusercontent.com/26847181/38174191-569a01fc-35e7-11e8-9d60-31d6fe467857.png)    ![details](https://user-images.githubusercontent.com/26847181/38174278-7e98df6a-35e8-11e8-9168-2ee87cbb0a21.png)    
+![home](https://user-images.githubusercontent.com/26847181/38174334-4f5976f0-35e9-11e8-841f-fcb550183782.png)
 
 ### Tech used :
 Java, Android Studio.
