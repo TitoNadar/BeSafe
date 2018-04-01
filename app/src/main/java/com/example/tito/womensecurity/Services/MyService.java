@@ -19,6 +19,8 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.tito.womensecurity.Common.Helper;
+import com.example.tito.womensecurity.Interface.SmsService;
 import com.example.tito.womensecurity.MainActivity;
 import com.example.tito.womensecurity.R;
 
@@ -30,6 +32,8 @@ public class MyService extends Service implements SensorEventListener {
     private float mAccelCurrent; // current acceleration including gravity
     private float mAccelLast; // last acceleration including gravity
     int counter;
+    SmsService smsService;
+
     public static final int RECORD_AUDIO = 0;
     public static final int WRITE_STORAGE = 1;
     public MyService() {
@@ -52,6 +56,7 @@ public class MyService extends Service implements SensorEventListener {
         mAccel = mAccel * 0.9f + delta; // perform low-cut filter
 
         if (mAccel > 11) {
+            smsService= Helper.getSmsService();
             counter=counter+1;
                 showNotification(counter);
 
@@ -93,7 +98,7 @@ public class MyService extends Service implements SensorEventListener {
             mgr.notify(101, note.build());
 
                 MainActivity mainActivity=new MainActivity();
-                mainActivity.startRecording();
+              //  mainActivity.startRecording();
 
 
        Log.d("tito","notified");

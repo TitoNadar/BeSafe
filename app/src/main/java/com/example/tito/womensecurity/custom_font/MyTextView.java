@@ -9,7 +9,7 @@ import android.widget.TextView;
  * Created by Tito on 01/04/2018.
  */
 
-public class MyTextView  extends android.support.v7.widget.AppCompatTextView {
+public class MyTextView  extends TextView {
 
     public MyTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -28,8 +28,8 @@ public class MyTextView  extends android.support.v7.widget.AppCompatTextView {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/lato_regular.ttf");
-            setTypeface(tf);
+//            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "font/lato_regular.ttf");
+  //          setTypeface(tf);
         }
     }
 

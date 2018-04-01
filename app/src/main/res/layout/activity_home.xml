@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.tito.womensecurity.Home">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <com.example.tito.womensecurity.custom_font.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Important Contacts:"
+        android:textColor="#2C3646"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.example.tito.womensecurity.custom_font.MyTextView
+        android:id="@+id/call_No.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 8080000814"
+        android:textStyle="italic"
+        android:textColor="#2C3626"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.example.tito.womensecurity.custom_font.MyTextView
+        android:id="@+id/call_No.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 8080000815"
+        android:textColor="#2C3626"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.example.tito.womensecurity.custom_font.MyTextView
+        android:id="@+id/call_No.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 8080000816"
+        android:textColor="#2C3626"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"></com.example.tito.womensecurity.custom_font.MyTextView>
+    <com.example.tito.womensecurity.custom_font.MyTextView
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Ahead"
+        android:textStyle="bold"
+        android:background="@drawable/round"
+        android:textColor="#CBD1DC"
+        android:gravity="center"
+        android:padding="14dp"
+        android:layout_marginTop="50dp"/>
+
+        />
+</LinearLayout>

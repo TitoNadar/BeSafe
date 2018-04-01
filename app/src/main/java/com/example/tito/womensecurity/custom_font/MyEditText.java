@@ -9,7 +9,7 @@ import android.widget.EditText;
  * Created by Tito on 01/04/2018.
  */
 
-public class MyEditText extends android.support.v7.widget.AppCompatEditText {
+public class MyEditText extends EditText {
 
     public MyEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -28,8 +28,8 @@ public class MyEditText extends android.support.v7.widget.AppCompatEditText {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/lato_regular.ttf");
-            setTypeface(tf);
+       //     Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "font/lato_regular.ttf");
+         //   setTypeface(tf);
         }
     }
 
