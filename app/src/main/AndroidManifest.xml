@@ -3,8 +3,8 @@
     package="com.example.tito.womensecurity">
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +24,12 @@
         <service
             android:name=".Services.MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".Home" />
+        <activity android:name=".Details" />
+        <activity android:name=".Login" />
+        <activity android:name=".SignUp"></activity>
     </application>
 
 </manifest>
