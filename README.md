@@ -1,14 +1,17 @@
 # BeSafe
 
-
-**BeSafe** is a Super Quick Android Application that provides human security for its app users in the real world. **3 single shakes** of a mobile phone will trigger the app to its main functioning. The app has its target audience as **women and kids** , but it's open to all and can help to prevent certain crimes such as burglary, kidnapping, theft, etc.
+**BeSafe** is an Android Application in the human security domain, Which triggers the app to it's panic mode with just **3 shakes** of the device. As the app triggers the panic,
+- A push notification is sent to the 5 nearest people and by clicking the notification route to the panicked user is drawn.
+- An automatic audio recording happens for 2 minutes and is sent to the server.
+- SMSs will be sent to 5 people (*these numbers will be saved while registering an accout in the app*) with position of the panicked user.
+- A push notification to the Police admin will also be sent, which will have route and the audio file.
 
 ### Motivation :
-We as technologists realized a lack of quick action of the app in this domain which drove us to make the product.
+Mobile Apps in this domain have been failing considerably in providing a quick trigger action at the moments of need, while IoT devices make it a lot harder to reach to public as people need to buy and carry that extra thing with themselves, which made us think to come to a solution and we managed preety well.
 
 ### Build status : 
-Prototype Stage (Almost Complete)
-Production Stage (Not Started) 
+- Prototype Stage (Almost Complete)
+- Production Stage (Not Started) 
 
 ### ScreenShots :
 
@@ -16,7 +19,7 @@ Production Stage (Not Started)
 
 ![details](https://user-images.githubusercontent.com/26847181/38174278-7e98df6a-35e8-11e8-9168-2ee87cbb0a21.png)
 
-### Tech used :
+### Built with :
 Java, Android Studio.
 
 ### Features :
@@ -39,11 +42,11 @@ Clone and download the project, extract the file locally and import the project 
 https://photos.app.goo.gl/x4Pb0PUcx4PBwC402
 
 ### API reference:
-1. https://instantalerts.co/
+- https://instantalerts.co/
 
 ### Authors:
-1. Tito Nadar        https://github.com/TitoNadar
-2. Yash Purohit     https://github.com/iam7pY
+- Tito Nadar        https://github.com/TitoNadar
+- Yash Purohit     https://github.com/iam7pY
 
 ### Licence :
 MIT
